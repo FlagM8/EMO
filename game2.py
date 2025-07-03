@@ -168,15 +168,15 @@ class Humanoid:
     def get_inputs(self, wall_x):
         inputs = []
         
-        # body orientation and angular velocity ¯\_(ツ)_/¯
+        # body orientation and angular velocity 
         inputs.append(self.bodies['torso'].angle / math.pi)
         inputs.append(self.bodies['torso'].angular_velocity / 10.0)
         
-        # torso velocity (important for movement allegedly :D) ¯\_(ツ)_/¯
+        # torso velocity (important for movement allegedly :D)
         inputs.append(self.bodies['torso'].velocity.x / 100.0)
         inputs.append(self.bodies['torso'].velocity.y / 100.0)
         
-        #jJoint angles for both legs ¯\_(ツ)_/¯
+        #jJoint angles for both legs 
         for i in range(2):
             # Hip angle
             hip_angle = self.bodies[f'upper_leg_{i}'].angle - self.bodies['torso'].angle
