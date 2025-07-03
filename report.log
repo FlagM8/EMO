@@ -1,0 +1,8 @@
+2025-07-04 01:24:54,846 - pyswarms.single.global_best - INFO - Optimize for 200 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-07-04 01:24:54,933 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 7.225970413601539e-14, best pos: [-2.06599489e-07 -1.71977776e-07]
+2025-07-04 01:25:04,450 - matplotlib.animation - WARNING - MovieWriter ffmpeg unavailable; using Pillow instead.
+2025-07-04 01:25:04,450 - matplotlib.animation - INFO - Animation.save using <class 'matplotlib.animation.PillowWriter'>
+2025-07-04 01:25:37,265 - pyswarms.single.global_best - INFO - Optimize for 200 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2025-07-04 01:25:37,290 - pyswarms.single.global_best - INFO - Optimization finished | best cost: 2.6287877793384084e-13, best pos: [-5.05161475e-07 -8.76964175e-08]
+2025-07-04 01:25:41,320 - matplotlib.animation - WARNING - MovieWriter ffmpeg unavailable; using Pillow instead.
+2025-07-04 01:25:41,320 - matplotlib.animation - INFO - Animation.save using <class 'matplotlib.animation.PillowWriter'>
