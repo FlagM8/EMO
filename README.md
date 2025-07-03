@@ -37,3 +37,8 @@ Do budoucna by bylo možné:
 - vyvážení fitness funkce a přidání dalších "odměn"
 - využití herního Enginu
 - větší konfigurace
+
+
+## Soubory ve složce
+- Zbytek složky obsahuje různé projekty z hodin EMO (emo.py,emo3.py,emo4.py,emo_pswarm.py)
+- game.py je hlavní projekt + neat_confix.txt, winner.pkl, config-feedworward....
