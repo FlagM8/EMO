@@ -3,7 +3,7 @@
 ## Co program dělá
 
 Simulace zobrazuje skupinu 50 jednoduchých „humanoidů“ složených z torza, hlavy, nohou a chodidel. Tyto postavy jsou poháněny motory v kloubech (kyčle, kolena, kotníky) a ovládány **umělými neuronovými sítěmi**, které se vyvíjejí pomocí algoritmu **NEAT (NeuroEvolution of Augmenting Topologies)**. 
-
+![til]([https://raw.githubusercontent.com/hashrocket/hr-til/master/app/assets/images/banner.png](https://raw.githubusercontent.com/FlagM8/EMO/refs/heads/main/emo.gif))
 Cílem evoluce je:
 - naučit humanoida stabilně stát a chodit,
 - co nejvíce se posunout doprava (vpřed),
