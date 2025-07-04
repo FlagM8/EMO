@@ -168,7 +168,7 @@ class Humanoid:
     def get_inputs(self, wall_x):
         inputs = []
         
-        # body orientation and angular velocity 
+        # body orientation and angular velocity
         inputs.append(self.bodies['torso'].angle / math.pi)
         inputs.append(self.bodies['torso'].angular_velocity / 10.0)
         
@@ -248,7 +248,7 @@ class Humanoid:
         
         # velocity
         velocity = self.bodies['torso'].velocity.x
-        velocity_bonus = max(0, velocity / 50.0)  # Bonus for moving forward
+        velocity_bonus = max(0, velocity / 50.0) 
         
         # upright
         torso_angle = abs(self.bodies['torso'].angle)
@@ -470,7 +470,7 @@ def eval_genomes(genomes, config):
 
         screen.fill((135, 206, 235)) # sky col
         
-        # Camera follow
+        # camera follow
         camera_x = 0
         if best_humanoid_this_gen:
             camera_x = max(0, best_humanoid_this_gen.bodies['torso'].position.x - SCREEN_WIDTH / 3)

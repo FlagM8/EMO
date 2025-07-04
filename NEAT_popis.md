@@ -1,27 +1,8 @@
-# NEAT Humanoid Walker – Evoluční modelování chodce
-
-## Co program dělá
-
-Simulace zobrazuje skupinu 50 jednoduchých „humanoidů“ složených z torza, hlavy, nohou a chodidel. Tyto postavy jsou poháněny motory v kloubech (kyčle, kolena, kotníky) a ovládány **umělými neuronovými sítěmi**, které se vyvíjejí pomocí algoritmu **NEAT (NeuroEvolution of Augmenting Topologies)**. 
-
-![NEAT Humanoid Walker](https://raw.githubusercontent.com/FlagM8/EMO/refs/heads/main/emo.gif)
-
-Cílem evoluce je:
-
-- naučit humanoida stabilně stát a chodit,
-- co nejvíce se posunout doprava (vpřed),
-- udržovat rovnováhu a stabilní výšku hlavy,
-- efektivně používat nohy k chůzi.
-
-## Použité technologie
-
-Projekt kombinuje několik knihoven a technologií:
-- **Python** – hlavní programovací jazyk,
-- **Pygame** – vizualizace prostředí, zobrazení chodců, neuronových sítí a statistiky,
-- **Pymunk** – fyzikální engine pro realistickou simulaci těles, kloubů a pohybu,
-- **NEAT-Python** – knihovna pro evoluci neuronových sítí s měnící se topologií.
-
 # Důležité části kódu evoluční simulace v `game_neat.py`
+
+Tento dokument popisuje konkrétní části kódu, které jsou klíčové pro evoluční simulaci a využití NEAT v projektu. Zaměřuje se na práci s NEAT, evaluaci jedinců a konstrukci humanoidů.
+
+---
 
 ## 1. Inicializace a běh NEAT
 
@@ -220,20 +201,3 @@ def draw_neural_network(surface, genome, config, position, width, height):
 ## 5. Další poznámky
 - Kód obsahuje i správu prostředí (pymunk, pygame), vizualizaci a statistiky.
 - Pro detailní nastavení evoluce a neuronových sítí slouží konfigurační soubor `config-feedforward.txt`.
-
-
-## Možná rozšíření
-Do budoucna by bylo možné:
-- přidat překážky do terénu (schody, nerovnosti),
-- umožnit evoluci složitějších topologií (např. rekurentní sítě),
-- zlepšit fyzikální model (přidat ruce, pružnější klouby),
-- uložit a znovu přehrát chování vítězné postavy.
-- editor postav
-- vyvážení fitness funkce a přidání dalších "odměn"
-- využití herního Enginu
-- větší konfigurace
-
-
-## Soubory ve složce
-- Zbytek složky obsahuje různé projekty z hodin EMO (emo.py,emo3.py,emo4.py,emo_pswarm.py)
-- neat_game/game_neat.py je hlavní projekt + neat_confix.txt, winner.pkl, config-feedworward....
